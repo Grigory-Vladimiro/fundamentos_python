@@ -16,3 +16,11 @@ def votar_pelicula():
         print(f"Has votado por '{nombre}'.")
     except KeyError:
         print("Error: La película no está registrada. Intenta otra.")
+
+def mostrar_resultados():
+    if not peliculas:
+        print("No hay películas registradas.")
+        return
+    print("Resultados de las votaciones:")
+    for peli, votos in peliculas.items():
+        print(f" - {peli}: {votos} voto(s)")
