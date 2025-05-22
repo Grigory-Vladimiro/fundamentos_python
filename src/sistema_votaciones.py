@@ -24,3 +24,11 @@ def mostrar_resultados():
     print("Resultados de las votaciones:")
     for peli, votos in peliculas.items():
         print(f" - {peli}: {votos} voto(s)")
+
+def guardar_resultados():
+    with open("resultados.csv", "w", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow(["Película", "Votos"])
+        for peli, votos in peliculas.items():
+            writer.writerow([peli, votos])
+    print("Resultados guardados en 'resultados.csv'.")
