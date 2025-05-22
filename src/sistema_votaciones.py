@@ -32,3 +32,28 @@ def guardar_resultados():
         for peli, votos in peliculas.items():
             writer.writerow([peli, votos])
     print("Resultados guardados en 'resultados.csv'.")
+
+def menu():
+    while True:
+        print("\n--- MENÚ VOTACIONES ---")
+        print("1. Añadir película")
+        print("2. Votar por una película")
+        print("3. Mostrar resultados")
+        print("4. Salir")
+        opcion = input("Selecciona una opción: ").strip()
+
+        if opcion == "1":
+            añadir_pelicula()
+        elif opcion == "2":
+            votar_pelicula()
+        elif opcion == "3":
+            mostrar_resultados()
+        elif opcion == "4":
+            guardar_resultados()
+            print("Hasta luego.")
+            break
+        else:
+            print("Opción no válida. Por favor, elige otra.")
+
+if __name__ == "__main__":
+    menu()
