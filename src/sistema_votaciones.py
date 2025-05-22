@@ -1,5 +1,7 @@
-peliculas {}
 import csv
+
+peliculas = {}
+
 
 def añadir_pelicula():
     nombre = input("Introduce el nombre de la película: ").strip()
