@@ -11,6 +11,8 @@
 # Usa funciones separadas por funcionalidad.
 # (Bonus: guardar votos en un fichero CSV)
 
+# Ejercicio 1: sistema_votaciones.py
+
 # Ejercicio 2: Limpieza de datos crudos
 # -------------------------------------
 # Dada una lista de nombres con errores (espacios, mayúsculas, duplicados),
